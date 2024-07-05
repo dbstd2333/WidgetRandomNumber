@@ -25,11 +25,11 @@
         <div class="text-sm text-gray-400 mt-4">*注：刷新会自动重置权重，权重降低率为60%，生成数量>=1时默认生成数字不一致</div>
         <div class="text-sm text-gray-400 mt-2">
             Version：0.2
-            <a-link href="link">
+            <a-link href="https://github.com/dbstd2333/WidgetRandomNumber">
                 <template #icon>
                     <icon-github />
                 </template>
-                Link
+                Github开源地址
             </a-link>
         </div>
     </div>
@@ -51,7 +51,7 @@ watchEffect(() => {
 })
 
 const resetwidget = () => {
-    generator.manuallyrResetWeights()
+    generator.manuallyResetWeights()
     Message.success("重置成功")
 }
 
