@@ -23,19 +23,27 @@
             <a-button @click="resetwidget">重置权重</a-button>
         </div>
         <div class="text-sm text-gray-400 mt-4">*注：刷新会自动重置权重，权重降低率为60%，生成数量>=1时默认生成数字不一致</div>
-        <div class="text-sm text-gray-400 mt-2">Version：0.2  </div>
+        <div class="text-sm text-gray-400 mt-2">
+            Version：0.2
+            <a-link href="link">
+                <template #icon>
+                    <icon-github />
+                </template>
+                Link
+            </a-link>
+        </div>
     </div>
 </template>
 
 <script setup>
 import { watchEffect, ref } from "vue"
 import { WeightedRandomGenerator } from "../assets/radom.js"
-import { Message } from '@arco-design/web-vue';
+import { Message } from "@arco-design/web-vue"
 
 const min = ref(1)
 const max = ref(30)
 const gnenum = ref(1)
-const gneresult = ref('请生成')
+const gneresult = ref("请生成")
 const useWeight = ref(true)
 let generator
 watchEffect(() => {
@@ -44,7 +52,7 @@ watchEffect(() => {
 
 const resetwidget = () => {
     generator.manuallyrResetWeights()
-    Message.success('重置成功')
+    Message.success("重置成功")
 }
 
 const generate = () => {
