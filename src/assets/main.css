@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'pingfang';
-    src: url('pf.ttf')
-  }
+    font-family: "MiSans-Regular";
+    src: url("MiSans-Regular.ttf") format("truetype");
+}

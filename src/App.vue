@@ -16,5 +16,5 @@ body {
     display: flex;
     justify-content: center;
     height: 100vh;
-    font-family: 'pingfang';
+    font-family: 'MiSans-Regular';
 }</style>
