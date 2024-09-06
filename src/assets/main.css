@@ -1,8 +1,16 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 @font-face {
     font-family: "MiSans-Regular";
-    src: url("MiSans-Regular.ttf") format("truetype");
+    src: url("MiSans-Regular.woff2") format("woff2");
 }
+
+@font-face {
+    font-family: "Barlow-SemiBold";
+    src: url("Barlow-SemiBold.woff2") format("woff2");
+}
+
+
+.fade {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }

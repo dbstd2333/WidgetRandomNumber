@@ -1,7 +1,7 @@
 import { Message } from '@arco-design/web-vue';
 
 export class WeightedRandomGenerator {
-    constructor(rangeStart, rangeEnd, initialWeights = 10, weightDecrement = 6) {
+    constructor(rangeStart, rangeEnd, initialWeights = 10, weightDecrement = 10) {
         this.rangeStart = rangeStart;
         this.rangeEnd = rangeEnd;
         this.weights = Array(rangeEnd - rangeStart + 1).fill(initialWeights);
