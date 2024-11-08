@@ -4,7 +4,7 @@ import RadomNum from "./components/rdn.vue"
 
 <template>
     <div class="gbc">
-        <RadomNum class="m-16"></RadomNum>
+        <RouterView></RouterView>
     </div>
 </template>
 

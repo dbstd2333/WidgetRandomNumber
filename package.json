@@ -12,8 +12,10 @@
     "@arco-plugins/vite-vue": "^1.4.5",
     "@arco-themes/vue-ant-border-radius": "^0.0.7",
     "autoprefixer": "^10.4.19",
+    "qrcode": "^1.5.4",
     "unplugin-auto-import": "^0.17.8",
-    "vue": "^3.4.29"
+    "vue": "^3.4.29",
+    "vue-router": "^4.4.5"
   },
   "devDependencies": {
     "@arco-design/web-vue": "^2.55.3",
